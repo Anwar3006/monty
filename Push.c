@@ -20,7 +20,7 @@ void push(stack_t **stack, unsigned int param)
         new_node->prev = (*stack)->prev;
         (*stack)->prev = new_node;
         *stack = new_node;
-        return (*stack);
+        return;
     }
 }
 
@@ -44,6 +44,6 @@ void enqueue(stack_t **stack, unsigned int param)
         new_node->next = (*stack)->next;
         (*stack)->next = new_node;
         *stack = new_node;
-        return (*stack);
+        return;
     }
 }
